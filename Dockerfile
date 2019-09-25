@@ -11,7 +11,8 @@ RUN npm install
 COPY ./ ./
 
 #default run command
-CMD ["npm","run","build"]
+#CMD ["npm","run","build"]
+CMD npm run build
 
 FROM nginx
 EXPOSE 80
