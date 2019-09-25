@@ -4,11 +4,11 @@ FROM node:alpine as builder
 WORKDIR /app
 
 # copy webapp files
-COPY package.json .
+COPY package*.json ./
 
 # install dependencies
 RUN npm install
-COPY . .
+COPY ./ ./
 
 #default run command
 CMD ["npm","run","build"]
