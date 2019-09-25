@@ -12,7 +12,7 @@ COPY ./ ./
 
 #default run command
 #CMD ["npm","run","build"]
-CMD npm run build
+RUN npm run build
 
 FROM nginx
 EXPOSE 80
